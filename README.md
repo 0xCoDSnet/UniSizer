@@ -33,7 +33,7 @@
 
 ---
 
-## Системы (сайты) для проверки уникальности текст:
+## Системы (сайты) для проверки уникальности текста:
 - [RusTXT-Antiplagiat](https://rustxt.ru/antiplagiat)
 - [TextCompare - Сравнение Текстов до/после преобразований](https://textcompare.ru/)
 - [Антиплагиат.ру](https://www.antiplagiat.ru/)
