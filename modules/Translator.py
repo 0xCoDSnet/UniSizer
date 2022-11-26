@@ -15,40 +15,38 @@ class Translator:
     def __init__(self, text: str, language: LanguageCodes | str,
                  scheme_transformation: SchemeTransformation, translator: str,
                  iterations: int):
-        self.text = text
-        self.translator = translator
-        self.buffer = text
-        self.language = language
-        self.buffer_lang = language
-        self.schema = scheme_transformation.split(",")
-        self.iterations = iterations
+        self.__text = text
+        self.__translator = translator
+        self.__buffer = text
+        self.__language = language
+        self.__buffer_lang = language
+        self.__schema = scheme_transformation.split(",")
+        self.__iterations = iterations
 
-        self.division_line = "-" * 13
+        self.__division_line = "-" * 15
 
-    @staticmethod
-    def trace_schema(self, text, lang):
-        self.buffer = tss.translate_text(query_text=text, translator=self.translator,
-                                         from_language=self.buffer_lang, to_language=lang)
-        print(self.buffer)
-        self.buffer_lang = lang
+    def __trace_schema(self, text, lang):
+        self.__buffer = tss.translate_text(query_text=text, translator=self.__translator,
+                                           from_language=self.__buffer_lang, to_language=lang)
+        # print(self.buffer)
+        self.__buffer_lang = lang
 
-    @staticmethod
-    def trace_iterations(self):
-        for j in self.schema:
-            print(f"Сейчас перевожу на {j}")
-            self.trace_schema(self, text=self.buffer, lang=j)
-        print(f"Сейчас перевожу на {self.language}")
-        self.text = tss.translate_text(query_text=self.buffer, translator=self.translator,
-                                       from_language=self.buffer_lang, to_language=self.language)
+    def __trace_iterations(self):
+        for j in self.__schema:
+            print(f"Сейчас перевожу на {j}.")
+            self.__trace_schema(text=self.__buffer, lang=j)
+        print(f"Сейчас перевожу на {self.__language}")
+        self.__text = tss.translate_text(query_text=self.__buffer, translator=self.__translator,
+                                         from_language=self.__buffer_lang, to_language=self.__language)
+        print(self.__division_line)
 
     def text_translation(self):
-        print(f"Главный язык: {self.language} | Схема перевода: {self.schema} | Итераций: {self.iterations}")
-        print(f"Начальный текст: {self.text}")
-        print(self.division_line)
+        print(f"Главный язык: {self.__language} | Схема перевода: {self.__schema} | Итераций: {self.__iterations}")
+        # print(f"Начальный текст: {self.text}")
+        print(self.__division_line)
 
-        for i in range(self.iterations):
-            self.trace_iterations(self)
+        for i in range(self.__iterations):
+            self.__trace_iterations()
 
-        print(self.division_line)
-        print("Итог:")
-        print(self.text)
+    def get_text(self) -> str:
+        return self.__text

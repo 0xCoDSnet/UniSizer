@@ -5,10 +5,16 @@
 from enum import Enum
 
 
+class TextEngines(Enum):
+    docx = ".docx"
+    txt = ".txt"
+
+
 class SchemeTransformation(Enum):
     # ru -> en -> nl -> en -> ru
     Scheme_1_to_reverso = "en,nl,en"
     Scheme_2_to_reverso = "en,nl,tr,en"
+
 
 class Translators(Enum):
     google = "google"
