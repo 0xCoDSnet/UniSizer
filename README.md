@@ -6,8 +6,8 @@
 - [ ] Поиск Схем, для разных языков
 - [ ] Добавить обход лимита на текст
 - [ ] Поддержка файлов
-  - [?] txt (только чтение)
-  - [?] docx (только чтение)
+  - [x] txt (только чтение)
+  - [x] docx (только чтение)
   - [ ] pdf
 - [x] Гибкая настройка через CLI
 ## В будущем
@@ -75,24 +75,37 @@ UniSizer (2 текст) | 87.5% - ✔ | 100% - ✔ | 49% - ⚠| ✔ - Смысл
 ## Инструкция по установке 
 1. Нужно: ``` Python >= 3.9 ```
 2. Установка зависимостей:```python3 -m pip install -r requirements.txt```
-3. Запуск:```python3 main.py```
+3. Запуск:```python3  UniSizer.py```
+## Аргументы командной строки
+```
+usage: UniSizer.py [-h] --input INPUT [--output OUTPUT] --language LANG [--translator TRANSLATOR] [--iterations ITER] [--schema SCHEMA]
 
+--Уникализатор текста, программное обеспечение (скрипт), которое поможет сделать тест уникальным! Он основано на переводе с одного языка на другой. Благодаря этому можно добиться уникальности текста, а главное не потерять его смысл!--
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --input INPUT         Введите текст или путь к файлу.
+  --output OUTPUT       Введите название выходного файла (В работе)
+  --language LANG       Введите язык текста.
+  --translator TRANSLATOR
+                        Введите название переводчика. Default: reverso ; All: reverso,google,yandex,deepl
+  --iterations ITER     Введите количество повторений. Default: 1
+  --schema SCHEMA       Введите свою схему/путь перевода. Default: en,nl,en
+```
 ## Пример выполнения программы
 ```
-$ python3 main.py
-Введите текст: А ведь у тебя тоже она есть, эта маска. И настоящая ты — это практически 2 разные личности, одна из которых — яркая, солнечная, живая девушка, в то время как другая — пасмурная, усталая старуха, сестра Смерти.
+$ python3 UniSizer.py --input=123.txt --language=ru
 Главный язык: ru | Схема перевода: ['en', 'nl', 'en'] | Итераций: 1
 Начальный текст: А ведь у тебя тоже она есть, эта маска. И настоящая ты — это практически 2 разные личности, одна из которых — яркая, солнечная, живая девушка, в то время как другая — пасмурная, усталая старуха, сестра Смерти.
 ----------
-Сейчас перевожу на en
+Сейчас перевожу на en:
 And you have it, too, this mask. And the real you is practically two different personalities, one of which is a bright, sunny, alive girl, while the other is a cloudy, tired old woman, Sister Death.
-Сейчас перевожу на nl
+Сейчас перевожу на nl:
 En je hebt het ook, dit masker. En de echte jij is praktisch twee verschillende persoonlijkheden, waarvan één een helder, zonnig, levend meisje is, terwijl de andere een bewolkte, vermoeide oude vrouw is, Sister Death.
-Сейчас перевожу на en
+Сейчас перевожу на en:
 And you have it too, this mask. And the real you are practically two different personalities, one of which is a bright, sunny, living girl, while the other is a cloudy, tired old woman, Sister Death.
 Сейчас перевожу на ru
 ----------
-Итог:
 И у тебя тоже, эта маска. А настоящая ты - две разные личности, одна из которых яркая, солнечная, живая девушка, а другая - облачная, уставшая старушка, Сестра Смерть.
 ```
 ## Пример использования из кода
