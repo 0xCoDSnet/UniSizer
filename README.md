@@ -10,6 +10,8 @@
 
 **UniSizer** решает эти проблемы, а также делает текст непохожим  на исходный для анализаторов антиплагиата. Также благодаря итерациям обработки текста можно регулировать степень его искажения.
 
+---
+
 ## Сравнение UniSizer с Синонимайзерами
 
 ### Сравнение преобразования текста с Синонимайзерами:
@@ -45,9 +47,65 @@ UniSizer (2 текст) | 87.5% - ✔ | 100% - ✔ | 49% - ⚠| ✔ - Смысл
 ---
 
 ## Инструкция по установке 
-1. Нужно: ```Python >= 3.9```
-2. Установка зависимостей:  ```python3 -m pip install -r requirements.txt```
-3. Запуск: ```python3 main.py```
+1. Нужно: ``` Python >= 3.9 ```
+2. Установка зависимостей:```python3 -m pip install -r requirements.txt```
+3. Запуск:```python3 main.py```
+
+## Пример выполнения программы
+```
+$ python3 main.py
+Введите текст: А ведь у тебя тоже она есть, эта маска. И настоящая ты — это практически 2 разные личности, одна из которых — яркая, солнечная, живая девушка, в то время как другая — пасмурная, усталая старуха, сестра Смерти.
+Главный язык: ru | Схема перевода: ['en', 'nl', 'en'] | Итераций: 1
+Начальный текст: А ведь у тебя тоже она есть, эта маска. И настоящая ты — это практически 2 разные личности, одна из которых — яркая, солнечная, живая девушка, в то время как другая — пасмурная, усталая старуха, сестра Смерти.
+----------
+Сейчас перевожу на en
+And you have it, too, this mask. And the real you is practically two different personalities, one of which is a bright, sunny, alive girl, while the other is a cloudy, tired old woman, Sister Death.
+Сейчас перевожу на nl
+En je hebt het ook, dit masker. En de echte jij is praktisch twee verschillende persoonlijkheden, waarvan één een helder, zonnig, levend meisje is, terwijl de andere een bewolkte, vermoeide oude vrouw is, Sister Death.
+Сейчас перевожу на en
+And you have it too, this mask. And the real you are practically two different personalities, one of which is a bright, sunny, living girl, while the other is a cloudy, tired old woman, Sister Death.
+Сейчас перевожу на ru
+----------
+Итог:
+И у тебя тоже, эта маска. А настоящая ты - две разные личности, одна из которых яркая, солнечная, живая девушка, а другая - облачная, уставшая старушка, Сестра Смерть.
+```
+## Пример использования из кода
+### Смена языка (По умолчанию: Ru):
+Строчный ввод или передача через переменную:
+```py
+lang = "en" # ru,uk,nl,kk и другие 
+uni = UniSizer(text=input(), language=lang)
+```
+или при помощи LanguageCodes(Enum):
+```py
+from Enums import LanguageCodes
+uni = UniSizer(text=input(), language=LanguageCodes.EN.value) 
+```
+### Смена количества итераций (По умолчанию: 1):
+Целочисленный ввод:
+```py
+uni = UniSizer(text=input(), language="ru", iterations=3) # iterations:int!
+```
+### Смена переводчика (По умолчанию: Reverso):
+Строчный ввод:
+```py
+uni = UniSizer(text=input(), language="ru", translator="google")
+```
+или при помощи Translators(Enum):
+```py
+from Enums import Translators
+uni = UniSizer(text=input(), language="ru", translator=Translators.google.value)
+```
+### Смена схемы/пути перевода (По умолчанию: Scheme_1_to_reverso="en,nl,en"):
+Строчный ввод:
+```py
+uni = UniSizer(text=input(), language="ru", scheme_transformation="en,uk,nl,en")
+```
+или при помощи SchemeTransformation(Enum):
+```py
+from Enums import SchemeTransformation
+uni = UniSizer(text=input(), language="ru", scheme_transformation=SchemeTransformation.Scheme_2_to_reverso.value)
+```
 
 ---
 
