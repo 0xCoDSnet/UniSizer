@@ -1,3 +1,7 @@
+#  Author: 0xCoDSnet
+#  GitHub: https://github.com/0xCoDSnet
+#  GitLab: https://gitlab.com/0xCoDSnet
+
 from __future__ import annotations
 
 import translators as tss
@@ -6,7 +10,7 @@ from Enums import LanguageCodes
 from Enums import SchemeTransformation
 
 
-class Translator():
+class Translator:
     def __init__(self, text: str, language: LanguageCodes | str,
                  scheme_transformation: SchemeTransformation, translator: str,
                  iterations: int):

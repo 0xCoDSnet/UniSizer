@@ -1,14 +1,17 @@
+#  Author: 0xCoDSnet
+#  GitHub: https://github.com/0xCoDSnet
+#  GitLab: https://gitlab.com/0xCoDSnet
+
 from __future__ import annotations
 
 from Enums import LanguageCodes, SchemeTransformation, Translators
 from Translator import Translator
 
 
-class UniSizer():
+class UniSizer:
     def __init__(self, text: str, language: LanguageCodes | str, iterations: int = 1,
                  translator: Translator | str = Translators.reverso.value,
-                 scheme_transformation: SchemeTransformation | str = SchemeTransformation.Scheme_reverso.value):
-
+                 scheme_transformation: SchemeTransformation | str = SchemeTransformation.Scheme_1_to_reverso.value):
         self.text = text
         self.language = language
         self.iterations = iterations
