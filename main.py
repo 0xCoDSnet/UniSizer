@@ -4,8 +4,8 @@
 
 from __future__ import annotations
 
-from Enums import LanguageCodes, SchemeTransformation, Translators
-from Translator import Translator
+from modules.Enums import LanguageCodes, SchemeTransformation, Translators
+from modules.Translator import Translator
 
 
 class UniSizer:
