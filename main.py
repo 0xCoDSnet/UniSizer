@@ -25,5 +25,5 @@ class UniSizer:
 
 
 if __name__ == "__main__":
-    uni = UniSizer(text=input("Введите текст: "), language="en", scheme_transformation="ru,nl,ru")
+    uni = UniSizer(text=input("Введите текст: "), language="ru", scheme_transformation="en,nl,en")
     uni.uniqueization()
