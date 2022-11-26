@@ -6,8 +6,8 @@ from __future__ import annotations
 
 import translators as tss
 
-from Enums import LanguageCodes
-from Enums import SchemeTransformation
+from modules.Enums import LanguageCodes
+from modules.Enums import SchemeTransformation
 
 
 class Translator:
