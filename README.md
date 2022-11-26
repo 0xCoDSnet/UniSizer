@@ -42,3 +42,6 @@ UniSizer (2 текст) | 87.5% - ✔ | 100% - ✔ | 49% - ⚠| ✔ - Смысл
 - [TextCompare - Сравнение Текстов до/после преобразований](https://textcompare.ru/)
 - [Антиплагиат.ру](https://www.antiplagiat.ru/)
 - [Текстовод - Синонимайзер/Антиплагиат](https://textovod.com/synonymizer)
+
+##License
+[MIT Llicense](https://github.com/0xCoDSnet/UniSizer/blob/main/LICENSE)
