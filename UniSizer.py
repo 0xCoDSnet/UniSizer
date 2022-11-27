@@ -14,7 +14,8 @@ from modules.Translator import Translator
 
 
 def get_args():
-    parser = argparse.ArgumentParser(description="--test--")
+    parser = argparse.ArgumentParser(description="--Уникализатор текста, программное обеспечение (скрипт), которое поможет сделать тест уникальным!\
+    Он основано на переводе с одного языка на другой. Благодаря этому можно добиться уникальности текста, а главное не потерять его смысл!--")
 
     parser.add_argument("--input", help="Введите текст или путь к файлу.", dest="input", type=str, required=True)
     parser.add_argument("--output", help="Введите название выходного файла", dest="output", type=str)
