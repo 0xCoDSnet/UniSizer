@@ -17,7 +17,7 @@ class FileReader():
             TextEngines.txt.value: self.__get_text_txt}
 
         self.__text_in_file = None
-        self.__filename, self.__file_extension = self.__get_file_type(path_to_file)
+        self.__filename, self.__file_extension = self.get_file_type(path_to_file)
         self.__get_text_from_file(path_to_file, self.__file_extension)
 
     def __composing_text(self, text_list: list) -> str:
@@ -44,7 +44,7 @@ class FileReader():
         return self.__text_in_file
 
     @staticmethod
-    def __get_file_type(path_to_file):
+    def get_file_type(path_to_file):
         return os.path.splitext(path_to_file)
 
 
