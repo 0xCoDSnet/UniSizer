@@ -86,7 +86,7 @@ usage: UniSizer.py [-h] --input INPUT [--output OUTPUT] --language LANG [--trans
 optional arguments:
   -h, --help            show this help message and exit
   --input INPUT         Введите текст или путь к файлу.
-  --output OUTPUT       Введите название выходного файла (В работе)
+  --output OUTPUT       Введите название выходного файла
   --language LANG       Введите язык текста.
   --translator TRANSLATOR
                         Введите название переводчика. Default: reverso ; All: reverso,google,yandex,deepl
