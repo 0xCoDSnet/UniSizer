@@ -4,6 +4,8 @@
 
 from enum import Enum
 
+DEFAULT_COUNT_CHARS = 1500
+
 
 class TextEngines(Enum):
     docx = ".docx"

@@ -4,6 +4,7 @@
 import os
 
 from modules.Enums import TextEngines
+from modules.Functions import print_info, print_error
 
 
 class FileWriter():
@@ -16,14 +17,15 @@ class FileWriter():
         try:
             self.__text_engines[file_extension.lower()](filename, text)
         except KeyError:
-            raise EOFError(f"Расширение {file_extension} не поддерживается!")
+            print_error(f"Расширение {file_extension} не поддерживается!")
+            raise EOFError
 
     def __save_to_docx(self, filename: str, text: str):
         pass
 
     def __save_to_txt(self, filename: str, text: str):
         name = os.path.join(os.getcwd(), f"{filename}_UniSize.txt")
-        file = open(name, encoding="UTF-8", mode="w")
+        file = open(name, encoding="UTF-8", mode="a")
         file.writelines(text)
         file.close()
-        print(f"Текст сохранён в файл: {name}")
+        print_info(f"Текст сохранён в файл: {name}")

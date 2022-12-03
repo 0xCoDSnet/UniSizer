@@ -7,6 +7,7 @@ import os
 import docx
 
 from modules.Enums import TextEngines
+from modules.Functions import print_error
 
 
 class FileReader():
@@ -38,7 +39,8 @@ class FileReader():
         try:
             self.__text_in_file = self.__text_engines[file_extension.lower()](path_to_file)
         except KeyError:
-            raise EOFError(f"Расширение {file_extension} не поддерживается!")
+            print_error(f"Расширение {file_extension} не поддерживается!")
+            raise EOFError
 
     def get_text(self):
         return self.__text_in_file
