@@ -95,19 +95,16 @@ optional arguments:
 ```
 ## Пример выполнения программы
 ```
-$ python3 UniSizer.py --input=123.txt --language=ru
-Главный язык: ru | Схема перевода: ['en', 'nl', 'en'] | Итераций: 1
-Начальный текст: А ведь у тебя тоже она есть, эта маска. И настоящая ты — это практически 2 разные личности, одна из которых — яркая, солнечная, живая девушка, в то время как другая — пасмурная, усталая старуха, сестра Смерти.
-----------
-Сейчас перевожу на en:
-And you have it, too, this mask. And the real you is practically two different personalities, one of which is a bright, sunny, alive girl, while the other is a cloudy, tired old woman, Sister Death.
-Сейчас перевожу на nl:
-En je hebt het ook, dit masker. En de echte jij is praktisch twee verschillende persoonlijkheden, waarvan één een helder, zonnig, levend meisje is, terwijl de andere een bewolkte, vermoeide oude vrouw is, Sister Death.
-Сейчас перевожу на en:
-And you have it too, this mask. And the real you are practically two different personalities, one of which is a bright, sunny, living girl, while the other is a cloudy, tired old woman, Sister Death.
-Сейчас перевожу на ru
-----------
-И у тебя тоже, эта маска. А настоящая ты - две разные личности, одна из которых яркая, солнечная, живая девушка, а другая - облачная, уставшая старушка, Сестра Смерть.
+$ python3 UniSizer.py --input=test.txt --language=ru
+[INFO] Текст будет выведен в файл!
+---------------------------------------------------------
+Главный язык: ru | Схема перевода: en,nl,en | Итераций: 1
+---------------------------------------------------------
+[INFO] Сейчас перевожу на en.
+[INFO] Сейчас перевожу на nl.
+[INFO] Сейчас перевожу на en.
+[INFO] Сейчас перевожу на ru
+[INFO] Текст сохранён в файл: E:\My Desktop\Learning\Programming\Projects\UniSizer\test_UniSize.txt
 ```
 ## Пример использования из кода
 ### Смена языка (По умолчанию: Ru):
