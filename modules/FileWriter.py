@@ -21,7 +21,7 @@ class FileWriter():
             raise EOFError
 
     def __save_to_docx(self, filename: str, text: str):
-        pass
+        self.__save_to_txt(filename,text)
 
     def __save_to_txt(self, filename: str, text: str):
         name = os.path.join(os.getcwd(), f"{filename}_UniSize.txt")
