@@ -6,7 +6,7 @@ Readme Lang: [EN](https://github.com/0xCoDSnet/UniSizer/blob/main/README_EN.md)/
 - [x] Translating Readme.md to EN (through an interpreter)
 - [ ] Adding web interface
 - [ ] Search Schemes, for different languages
-- [ ] Add text limit bypass
+- [x] Add text limit bypass
 - [ ] Support for files
   - [x] **txt** _read/write_
   - [x] **docx** _read/write txt_
