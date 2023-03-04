@@ -1,3 +1,5 @@
+Readme Lang: [EN](https://github.com/0xCoDSnet/UniSizer/blob/main/README_EN.md)/[RU](https://github.com/0xCoDSnet/UniSizer/blob/main/README.md)
+
 **UniSizer** - Уникализатор текста, программное обеспечение (скрипт), которое поможет сделать тест уникальным! Он основано на переводе с одного языка на другой. Благодаря этому можно добиться уникальности текста, а главное не потерять его смысл!
 
 ## To-Do
