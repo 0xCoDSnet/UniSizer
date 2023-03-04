@@ -1,3 +1,5 @@
+Readme Lang: [EN](https://github.com/0xCoDSnet/UniSizer/blob/main/README_EN.md)/[RU](https://github.com/0xCoDSnet/UniSizer/blob/main/README.md)
+
 **UniSizer** - Text Uniquizer, a software (script) that helps make a test unique! It is based on the translation from one language to another. Thanks to this you can achieve the uniqueness of the text, and most importantly not to lose its meaning!
 
 ## To-Do
