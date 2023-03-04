@@ -3,7 +3,7 @@ Readme Lang: [EN](https://github.com/0xCoDSnet/UniSizer/blob/main/README_EN.md)/
 **UniSizer** - Text Uniquizer, a software (script) that helps make a test unique! It is based on the translation from one language to another. Thanks to this you can achieve the uniqueness of the text, and most importantly not to lose its meaning!
 
 ## To-Do
-- [ ] Translating Readme.md to EN
+- [x] Translating Readme.md to EN (through an interpreter)
 - [ ] Adding web interface
 - [ ] Search Schemes, for different languages
 - [ ] Add text limit bypass
@@ -19,19 +19,19 @@ Readme Lang: [EN](https://github.com/0xCoDSnet/UniSizer/blob/main/README_EN.md)/
   - [ ] iOS
 
 ## Contents
-- [Why is UniSizer better than Synonymizers?](#why-unisizer-is-better-than-synonymizers-)
-- [UniSizer vs Synonymizers comparison](#comparison-unisizer-with-synonymizers)
-  - [Text Conversion Comparison with Synonymizers](#comparison-conversion-text-conversion-synonymizers-)
-  - [Text uniqueness and comprehensibility comparison with Synonymizers](#comparison-uniqueness-and-comprehensibility-text-with-synonymizers)
-  - [Systems (sites) for checking text uniqueness](#systems-sites-for-check-uniqueness-text)
-- [Setup guide](#installation guide)
-- [Command Line Arguments](#command-linearguments)
-- [Example program execution](#example-execution-program)
-- [Example use-code](#example-use-code)
-  - [Change language](#change-default-language-en)
-  - [Change the number of iterations](#change-number-of-iterations-fault-1)
-  - [Change interpreter](#change-interpreter-default-reverso)
-  - [Change translation scheme/translation path](#change-translation-path-fault-scheme_1_to_reversoennlen)
+- [Why is UniSizer better than Synonymizers?](#why-is-unisizer-better-than-synonymizers)
+- [UniSizer vs Synonymizers comparison](#comparison-of-unisizer-with-synonymizers)
+  - [Text Conversion Comparison with Synonymizers](#comparison-of-text-conversion-with-synonymizers)
+  - [Text uniqueness and comprehensibility comparison with Synonymizers](#comparison-of-text-uniqueness-and-comprehensibility-with-synonymizers)
+  - [Systems (sites) for checking text uniqueness](#systems-sites-to-check-the-uniqueness-of-the-text)
+- [Setup guide](#installation-instructions)
+- [Command Line Arguments](#command-line-arguments)
+- [Example program execution](#example-program-execution)
+- [Example use-code](#example-usage-from-the-code)
+  - [Change language](#change-language-default-ru)
+  - [Change the number of iterations](#change-the-number-of-iterations-default-1)
+  - [Change interpreter](#change-the-translator-default-reverso)
+  - [Change translation scheme/translation path](#change-translation-schemepath-default-scheme_1_to_reversoennlen)
 - [License](#license)
 ## Why is UniSizer better than synonymizers?
 
