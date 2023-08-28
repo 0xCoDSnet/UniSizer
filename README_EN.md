@@ -78,9 +78,9 @@ Synonymizer from Tekstovod (2 text) | 100% - ✔ | 100% - ✔ | 57% - ⚠ | ⚠ 
 ---
 
 ## Installation instructions 
-1. Need: `` Python >= 3.9
-2. Install dependencies:```python3 -m pip install -r requirements.txt``
-3. Run:``python3 UniSizer.py``.
+1. Make sure you have Python **version 3.9 or higher installed.**
+2. Install the dependencies by running the command `python3 -m pip install -r requirements.txt`.
+3. To run the program, execute the command `python3 UniSizer.py`.
 ## Command line arguments
 ```
 usage: UniSizer.py [-h] --input INPUT [-output OUTPUT] --language LANG [--translator TRANSLATOR] [--iterations ITER] [--schema SCHEMA]
