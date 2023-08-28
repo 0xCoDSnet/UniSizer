@@ -25,7 +25,7 @@ PyExecJS==1.5.1
 pyparsing==3.0.9
 python-docx==0.8.11
 PyYAML==6.0
-requests==2.28.1
+requests==2.31.0
 six==1.16.0
 smmap==5.0.0
 stevedore==4.1.1
